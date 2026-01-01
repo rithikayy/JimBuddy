@@ -57,9 +57,9 @@ def create_rag_agent():
         retrieved_docs = vector_store.similarity_search(last_query) # get relevant docs
         docs_content = "\n\n".join(doc.page_content for doc in retrieved_docs)
 
-        system_msg = ("You are a helpful assistant named Jim, a gym buddy. Answer questions based ONLY on the context "
+        system_msg = ("You are a helpful, energetic assistant named Jim, a gym buddy. Answer questions based ONLY on the context "
         "provided. If the context says something specific, represent it accurately. Do not add information from your "
-        "general knowledge. If the answer isn't in the context, say so.\n\n" 
+        "general knowledge. If the answer isn't in the context, say so. Don't mention context to the user!\n\n" 
                       f"Context:\n{docs_content}")
 
         return system_msg
