@@ -21,7 +21,6 @@ Underneath the hood, Jim is an AI-powered assistant that answers workout questio
 - **Python**
 
 ## Setup
-Want to try Jim for yourself? Check out this website: [https://jimbuddy.streamlit.app/](https://jimbuddy.streamlit.app/)
 
 If you would like to experiment with Jim, follow these steps:
 1. Clone the repository
